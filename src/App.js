@@ -1,43 +1,21 @@
-import React from 'react';
-import './App.css';
-import HomeScreen from './components/HomeScreen';
+import React from "react";
+import "./App.css";
+import HomeScreen from "./components/HomeScreen";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="app">
-      <HomeScreen />
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
-      <h1>Trest</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeScreen />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
